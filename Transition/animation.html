@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation here</title>
+   <style>
+    .animation{
+width: 100px;
+height: 100px;
+background-color: red;
+
+animation-name: slide, grow, blackandwhite;
+animation-duration: 1s, 2s,0.2s;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+animation-timing-function: linear;
+
+    }
+@keyframes slide {
+    to{
+       transform: translateX(300px);
+       
+    }
+}
+
+
+@keyframes grow {
+   to{
+    width:200px;
+    height: 200px;
+   } 
+}
+
+@keyframes blackandwhite {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: gainsboro;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <div class="animation">
+    
+    </div>
+</body>
+</html>
